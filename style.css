@@ -168,20 +168,20 @@ header .material-icons {
   width: 100%;
   height: 18px;
   background-color: #f8f7f3;
-  border: 2px solid #f8f7f3;
+  border: 1px solid #f8f7f3;
   font-size: 14px;
   color: #1a24fb;
 }
 
 #root .card button:hover {
-  border: 2px solid #1a24fb;
+  border: 1px solid #1a24fb;
   background-color: #1a24fb;
   color: #f8f7f3;
 }
 
 #root .card button span {
   position: absolute;
-  right: -2px;
+  right: -1px;
   top: 50%;
   font-size: 18px;
   -webkit-transform: translate(0, -50%);
