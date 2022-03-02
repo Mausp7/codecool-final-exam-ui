@@ -54,8 +54,6 @@ body {
   min-height: 100vh;
   background-color: #f8f7f3;
   font-family: "Montserrat", sans-serif;
-  /*     font-family: 'Overpass', sans-serif;
- */
   color: #1a24fb;
 }
 
@@ -101,16 +99,16 @@ header .material-icons {
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 1280px;
-  margin: 90px auto 90px;
+  margin: 0 auto 0;
+  padding: 80px 30px;
 }
 
 #root .card {
   position: relative;
-  width: 400px;
-  min-height: 250px;
+  width: 360px;
   margin: 50px 10px;
   padding: 40px;
-  border: 2px solid #1a24fb;
+  border: 1px solid #1a24fb;
   background-color: #f8f7f3;
   color: #1a24fb;
 }
@@ -136,16 +134,14 @@ header .material-icons {
 }
 
 #root .card h2.title {
-  /* 			min-height: 90px;
- */
-  /* 			padding-bottom: 10px;
-			border-bottom: 1px solid #f8f7f3;
- */
+  min-height: 90px;
+  margin-bottom: 20px;
   font-size: 36px;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 #root .card h3.sub {
+  margin-bottom: 10px;
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
@@ -153,8 +149,10 @@ header .material-icons {
 }
 
 #root .card p.text {
+  font-family: "Overpass", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  line-height: 1.6em;
 }
 
 #root .card button {
