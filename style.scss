@@ -1,0 +1,187 @@
+body,
+body *,
+body *::before,
+body *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+	background: transparent;
+
+	font-family: inherit;
+	text-decoration: none;
+	outline: none;
+}
+
+ol,
+ul,
+li {
+	display: block;
+
+	list-style: none;
+}
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+a img {
+	border: none;
+}
+
+button,
+a {
+	cursor: pointer;
+
+	color: inherit;
+}
+
+textarea {
+	resize: none;
+}
+
+button,
+input,
+textarea,
+select {
+	appearance: none !important;
+	-webkit-appearance: none !important;
+
+	border-radius: 0;
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+
+	background-color: #f8f7f3;
+
+	font-family: "Montserrat", sans-serif;
+
+	/*     font-family: 'Overpass', sans-serif;
+ */
+	color: #1a24fb;
+}
+
+header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+
+	width: 100%;
+	height: 40px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 0px 10px;
+	background-color: #1a24fb;
+
+	color: #f8f7f3;
+
+	h1 {
+		font-size: 12px;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		font-weight: 400;
+	}
+
+	.material-icons {
+		font-size: 24px;
+	}
+}
+
+#root {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	max-width: 1280px;
+
+	margin: 90px auto 90px;
+
+	.card {
+		position: relative;
+
+		width: 400px;
+		min-height: 250px;
+
+		margin: 50px 10px;
+		padding: 40px;
+		border: 2px solid #1a24fb;
+		background-color: #f8f7f3;
+
+		color: #1a24fb;
+
+		.number {
+			position: absolute;
+			top: 0px;
+			right: 0px;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 40px;
+			height: 40px;
+
+			font-size: 24px;
+			font-weight: 700;
+			color: #1a24fb;
+		}
+
+		h2.title {
+			/* 			min-height: 90px;
+ */
+			/* 			padding-bottom: 10px;
+			border-bottom: 1px solid #f8f7f3;
+ */
+			font-size: 36px;
+			font-weight: 700;
+		}
+		h3.sub {
+			font-size: 12px;
+			font-weight: 400;
+			text-transform: uppercase;
+			letter-spacing: 0.2em;
+		}
+		p.text {
+			font-size: 16px;
+			font-weight: 400;
+		}
+
+		button {
+			position: absolute;
+			left: 0;
+			bottom: -20px;
+
+			width: 100%;
+			height: 18px;
+
+			background-color: #f8f7f3;
+
+			font-size: 14px;
+			color: #1a24fb;
+
+			&:hover {
+				border: 2px solid #f8f7f3;
+				background-color: #1a24fb;
+
+				color: #f8f7f3;
+			}
+
+			span {
+				position: absolute;
+				right: 5px;
+				top: 50%;
+
+				font-size: 18px;
+
+				transform: translate(0, -50%);
+			}
+		}
+	}
+}
